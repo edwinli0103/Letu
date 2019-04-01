@@ -1,5 +1,5 @@
 
-# letu projuct
+# letu project
 ## 宠物电商demo
 
 ### 项目简介
