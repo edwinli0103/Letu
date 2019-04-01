@@ -1,0 +1,482 @@
+/*reset start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Regular;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+input,
+select {
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+a:visited {
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/*Common Tools Class -> start*/
+
+.clearfix:before,
+.clearfix:after {
+    /*清除浮动*/
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+._left {
+    float: left;
+}
+
+._right {
+    float: right;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.fx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fx_s {
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.fx_col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.fx_1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.fx_2 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.fx_3 {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.fx_4 {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+
+.fx_5 {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+}
+
+.fx_6 {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+}
+
+.fx_7 {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+}
+
+.fx_8 {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+}
+
+.fx_9 {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+}
+
+.fx_10 {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.transform90 {
+    transform: rotateZ(90deg);
+}
+
+.transform180 {
+    transform: rotateZ(180deg);
+}
+
+.colorRed {
+    background: red;
+}
+
+.font_12 {
+    font-size: 12px;
+}
+
+.font_14 {
+    font-size: 0.14rem;
+}
+
+.font_22 {
+    font-size: 0.22rem;
+}
+
+.font_24 {
+    font-size: 0.24rem;
+}
+
+.font_26 {
+    font-size: 0.26rem;
+}
+
+.font_28 {
+    font-size: 0.28rem;
+}
+
+.font_B28 {
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.font_30 {
+    font-size: 0.30rem;
+}
+
+.font_B30 {
+    font-size: 0.30rem;
+    font-weight: bold;
+}
+
+.font_32 {
+    font-size: 0.32rem;
+}
+
+.font_B32 {
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+
+.font_34 {
+    font-size: 0.34rem;
+}
+
+.font_B34 {
+    font-size: 0.34rem;
+    font-weight: bold;
+}
+
+.font_36 {
+    font-size: 0.36rem;
+}
+
+.font_B36 {
+    font-size: 0.36rem;
+    font-weight: bold;
+}
+
+.font_50 {
+    font-size: 0.50rem;
+}
+
+.font_B50 {
+    font-size: 0.50rem;
+    font-weight: bold;
+}
+
+.font_44 {
+    font-size: 0.44rem;
+}
+
+.font_B44 {
+    font-size: 0.44rem;
+    font-weight: bold;
+}
+
+.color_white {
+    color: #fff;
+}
+
+.col_3 {
+    color: #333;
+}
+
+.col_6 {
+    color: #666;
+}
+
+.col_9 {
+    color: #999;
+}
+
+.col_c {
+    color: #ccc;
+}
+
+.col_main {
+    color: #18A5A9;
+}
+
+.color_red {
+    color: #ff3800 !important;
+}
+
+.colImg_red {
+    color: #f74461;
+}
+
+.colImg_blue {
+    color: #7da5bf;
+}
+
+.colImg_green {
+    color: #7dbfb3;
+}
+
+.colImg_purple {
+    color: #b87dbf;
+}
+
+.colImg_gray {
+    color: #c7c7c7;
+}
+
+.txt_c {
+    text-align: center;
+}
+
+.txt_r {
+    text-align: right;
+}
+
+.txt_l {
+    text-align: left;
+}
+
+.bg_white {
+    background: #fff;
+}
+
+.bg_main {
+    background: #18A5A9;
+}
+
+.bgImg_red {
+    background: #f74461;
+}
+
+.bgImg_blue {
+    background: #7da5bf;
+}
+
+.bgImg_green {
+    background: #7dbfb3;
+}
+
+.bgImg_purple {
+    background: #b87dbf;
+}
+
+.bgImg_gray {
+    background: #c7c7c7;
+}
+
+.icon_all {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back_icon_all {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: .8rem;
+    height: .75rem;
+}
+
+.box_b {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box_pad3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 3%;
+}
+
+.box_pad33 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+}
+
+.pad_2 {
+    padding: .2rem;
+}
+
+.pad_2f {
+    padding: .2rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.pad_2d {
+    padding: .2rem;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.padlr_2 {
+    padding: 0 .2rem;
+}
+
+.padlr_2e {
+    padding: 0 .2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.marb_1 {
+    margin-bottom: .1rem;
+}
+
+.marb_2 {
+    margin-bottom: .2rem;
+}
+
+.bor_main {
+    border: 1px solid #18A5A9 !important;
+}
+
+.bor_red {
+    border: 1px solid #ff3800 !important;
+}
+/* 分享指导遮罩层 */
+.my_msk {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.my_imgBox {
+    height: 350px;
+    margin-top: -6%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:  contain;
+}
+
+/*Common Tools Class -> end*/
